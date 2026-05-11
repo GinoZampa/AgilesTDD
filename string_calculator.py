@@ -3,7 +3,7 @@ def sumar(numbers: str) -> int:
         return 0
     elif "," in numbers:
         numeros = numbers.split(",")
-        return int(numeros[0]) + int(numeros[1])
+        return sum(int(num) for num in numeros)
     else:
         return int(numbers)
     
