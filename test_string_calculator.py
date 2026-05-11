@@ -8,5 +8,8 @@ class TestStringCalculator(unittest.TestCase):
     def test_un_numero_devuelve_el_mismo_numero(self):
         self.assertEqual(sumar("5"), 5)
 
+    def test_un_numero_devuelve_el_mismo_numero(self):
+        self.assertEqual(sumar("4"), 4)
+
 if __name__ == '__main__':
     unittest.main()
