@@ -23,5 +23,8 @@ class TestStringCalculator(unittest.TestCase):
     def test_varios_numeros_con_salto_de_linea_devuelve_la_suma(self):
         self.assertEqual(sumar("1,2\n3"), 6)
 
+    def test_varios_numeros_solo_con_salto_de_linea_devuelve_la_suma(self):
+        self.assertEqual(sumar("1\n2\n3"), 6)
+
 if __name__ == '__main__':
     unittest.main()
